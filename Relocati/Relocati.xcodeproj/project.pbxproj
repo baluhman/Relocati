@@ -11,6 +11,11 @@
 		4F9F5CD2293A40B600DF2068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F5CD1293A40B600DF2068 /* ContentView.swift */; };
 		4F9F5CD4293A40B700DF2068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9F5CD3293A40B700DF2068 /* Assets.xcassets */; };
 		4F9F5CD7293A40B700DF2068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9F5CD6293A40B700DF2068 /* Preview Assets.xcassets */; };
+		FD232A82293A9EA900D0B282 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A81293A9EA800D0B282 /* BounceView.swift */; };
+		FD232A86293A9EBA00D0B282 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A83293A9EBA00D0B282 /* FontFamily.swift */; };
+		FD232A87293A9EBA00D0B282 /* Color + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A84293A9EBA00D0B282 /* Color + Hex.swift */; };
+		FD232A88293A9EBA00D0B282 /* UIColor + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A85293A9EBA00D0B282 /* UIColor + Hex.swift */; };
+		FD232A8C293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD232A8B293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		4F9F5CD1293A40B600DF2068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F9F5CD3293A40B700DF2068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F9F5CD6293A40B700DF2068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD232A81293A9EA800D0B282 /* BounceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
+		FD232A83293A9EBA00D0B282 /* FontFamily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
+		FD232A84293A9EBA00D0B282 /* Color + Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Hex.swift"; sourceTree = "<group>"; };
+		FD232A85293A9EBA00D0B282 /* UIColor + Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + Hex.swift"; sourceTree = "<group>"; };
+		FD232A8B293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Soyuz-Grotesk-Bold.otf"; path = "Relocati/fonts/Soyuz-Grotesk-Bold.otf"; sourceTree = SOURCE_ROOT; };
+		FD232A8F293A9F1C00D0B282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +62,10 @@
 		4F9F5CCE293A40B600DF2068 /* Relocati */ = {
 			isa = PBXGroup;
 			children = (
+				FD232A8F293A9F1C00D0B282 /* Info.plist */,
+				FD232A8A293A9EC500D0B282 /* Fonts */,
+				FD232A89293A9EBC00D0B282 /* Extensions */,
+				FD232A81293A9EA800D0B282 /* BounceView.swift */,
 				4F9F5CCF293A40B600DF2068 /* RelocatiApp.swift */,
 				4F9F5CD1293A40B600DF2068 /* ContentView.swift */,
 				4F9F5CD3293A40B700DF2068 /* Assets.xcassets */,
@@ -65,6 +80,24 @@
 				4F9F5CD6293A40B700DF2068 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD232A89293A9EBC00D0B282 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FD232A84293A9EBA00D0B282 /* Color + Hex.swift */,
+				FD232A83293A9EBA00D0B282 /* FontFamily.swift */,
+				FD232A85293A9EBA00D0B282 /* UIColor + Hex.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FD232A8A293A9EC500D0B282 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FD232A8B293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD232A8C293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf in Resources */,
 				4F9F5CD7293A40B700DF2068 /* Preview Assets.xcassets in Resources */,
 				4F9F5CD4293A40B700DF2068 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD232A86293A9EBA00D0B282 /* FontFamily.swift in Sources */,
+				FD232A82293A9EA900D0B282 /* BounceView.swift in Sources */,
 				4F9F5CD2293A40B600DF2068 /* ContentView.swift in Sources */,
+				FD232A88293A9EBA00D0B282 /* UIColor + Hex.swift in Sources */,
 				4F9F5CD0293A40B600DF2068 /* RelocatiApp.swift in Sources */,
+				FD232A87293A9EBA00D0B282 /* Color + Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +308,7 @@
 				DEVELOPMENT_TEAM = 42LRQS6X44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Relocati/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Relocati;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -302,6 +341,7 @@
 				DEVELOPMENT_TEAM = 42LRQS6X44;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Relocati/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Relocati;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
