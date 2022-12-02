@@ -16,6 +16,10 @@
 		FD232A87293A9EBA00D0B282 /* Color + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A84293A9EBA00D0B282 /* Color + Hex.swift */; };
 		FD232A88293A9EBA00D0B282 /* UIColor + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A85293A9EBA00D0B282 /* UIColor + Hex.swift */; };
 		FD232A8C293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD232A8B293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf */; };
+		FD232A91293AA01D00D0B282 /* UpLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A90293AA01D00D0B282 /* UpLevelView.swift */; };
+		FD232A93293AA12700D0B282 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD232A92293AA12700D0B282 /* Inter-Regular.ttf */; };
+		FD232A95293AA5AF00D0B282 /* View + CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A94293AA5AF00D0B282 /* View + CornerRadius.swift */; };
+		FD232A97293AA89200D0B282 /* CountryMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A96293AA89200D0B282 /* CountryMatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		FD232A85293A9EBA00D0B282 /* UIColor + Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + Hex.swift"; sourceTree = "<group>"; };
 		FD232A8B293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Soyuz-Grotesk-Bold.otf"; path = "Relocati/fonts/Soyuz-Grotesk-Bold.otf"; sourceTree = SOURCE_ROOT; };
 		FD232A8F293A9F1C00D0B282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FD232A90293AA01D00D0B282 /* UpLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpLevelView.swift; sourceTree = "<group>"; };
+		FD232A92293AA12700D0B282 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		FD232A94293AA5AF00D0B282 /* View + CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + CornerRadius.swift"; sourceTree = "<group>"; };
+		FD232A96293AA89200D0B282 /* CountryMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,8 @@
 				4F9F5CD1293A40B600DF2068 /* ContentView.swift */,
 				4F9F5CD3293A40B700DF2068 /* Assets.xcassets */,
 				4F9F5CD5293A40B700DF2068 /* Preview Content */,
+				FD232A90293AA01D00D0B282 /* UpLevelView.swift */,
+				FD232A96293AA89200D0B282 /* CountryMatchView.swift */,
 			);
 			path = Relocati;
 			sourceTree = "<group>";
@@ -88,6 +98,7 @@
 				FD232A84293A9EBA00D0B282 /* Color + Hex.swift */,
 				FD232A83293A9EBA00D0B282 /* FontFamily.swift */,
 				FD232A85293A9EBA00D0B282 /* UIColor + Hex.swift */,
+				FD232A94293AA5AF00D0B282 /* View + CornerRadius.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				FD232A8B293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf */,
+				FD232A92293AA12700D0B282 /* Inter-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -160,6 +172,7 @@
 			files = (
 				FD232A8C293A9ED400D0B282 /* Soyuz-Grotesk-Bold.otf in Resources */,
 				4F9F5CD7293A40B700DF2068 /* Preview Assets.xcassets in Resources */,
+				FD232A93293AA12700D0B282 /* Inter-Regular.ttf in Resources */,
 				4F9F5CD4293A40B700DF2068 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,8 +186,11 @@
 			files = (
 				FD232A86293A9EBA00D0B282 /* FontFamily.swift in Sources */,
 				FD232A82293A9EA900D0B282 /* BounceView.swift in Sources */,
+				FD232A97293AA89200D0B282 /* CountryMatchView.swift in Sources */,
 				4F9F5CD2293A40B600DF2068 /* ContentView.swift in Sources */,
+				FD232A95293AA5AF00D0B282 /* View + CornerRadius.swift in Sources */,
 				FD232A88293A9EBA00D0B282 /* UIColor + Hex.swift in Sources */,
+				FD232A91293AA01D00D0B282 /* UpLevelView.swift in Sources */,
 				4F9F5CD0293A40B600DF2068 /* RelocatiApp.swift in Sources */,
 				FD232A87293A9EBA00D0B282 /* Color + Hex.swift in Sources */,
 			);
