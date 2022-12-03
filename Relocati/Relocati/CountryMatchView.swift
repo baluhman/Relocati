@@ -87,10 +87,10 @@ struct CountryMatchView: View {
                 
                 Spacer()
                     .frame(height: 39)
-                
-                Button {
-                    didTap()
-                } label: {
+                NavigationLink(
+                    destination: BounceView(didTap: { })
+                        .navigationBarBackButtonHidden(true)
+                ) {
                     Text("Да, мне подходит")
                         .font(.inter(size: 20))
                         .padding(.vertical, 28)
@@ -99,6 +99,7 @@ struct CountryMatchView: View {
                         .background(blackColor)
                         .cornerRadius(40)
                 }
+                    
                 Spacer()
                     .frame(height: 17)
             }

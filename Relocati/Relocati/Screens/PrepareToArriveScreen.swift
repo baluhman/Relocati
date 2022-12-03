@@ -9,10 +9,45 @@ import SwiftUI
 
 struct PrepareToArriveView: View {
     var body: some View {
-        NavigationStack {
-            ZStack {
-                Color(hex: "1E1E1E")
-                    .ignoresSafeArea()
+        ZStack {
+            Color(hex: "1E1E1E")
+                .ignoresSafeArea()
+            
+            VStack(alignment: .leading) {
+                // TODO: - поменять шрифты на кастомные вместо системных
+                HStack(alignment: .center) {
+                    Image("Ellipse 10")
+                        .clipShape(Circle())
+                    
+                    VStack(alignment: .leading, spacing: 3) {
+                        Text("Александр")
+                            .font(.system(size: 14))
+                            .lineSpacing(14)
+                            .foregroundColor(.white)
+                            .padding(3)
+                        Text("82 дня до переезда")
+                            .font(.system(size: 14))
+                            .foregroundColor(.white)
+                            .opacity(0.6)
+                    }
+                    .padding()
+                    
+                    Spacer()
+                    
+                    VStack(spacing: 5) {
+                        Text("buddy pro")
+                            .font(.system(size: 14))
+                            .frame(width: 82, height: 25)
+                            .background(.purple)
+                            .cornerRadius(19)
+                        
+                        Text("Подписаться")
+                            .font(.system(size: 10))
+                            .padding(0.0)
+                            .foregroundColor(.white)
+                    }
+                }
+                .padding()
                 
                 VStack(alignment: .leading, spacing: 30) {
                     HStack(alignment: .center) {

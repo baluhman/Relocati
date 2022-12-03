@@ -58,32 +58,65 @@ struct BounceView: View {
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                Button {
-                    if scene.isOneSelected ||
-                        scene.isTwoSelected ||
-                        scene.isThreeSelected ||
-                        scene.isFourSelected ||
-                        scene.isFiveSelected ||
-                        scene.isSixSelected ||
-                        allSelected {
-                        didTap()
-                    } else {
+                
+                if scene.isOneSelected ||
+                    scene.isTwoSelected ||
+                    scene.isThreeSelected ||
+                    scene.isFourSelected ||
+                    scene.isFiveSelected ||
+                    scene.isSixSelected ||
+                    allSelected {
+                    
+                    NavigationLink(
+                        destination: PrepareToArriveView()
+                            .navigationBarBackButtonHidden(true)
+                    ) {
+                        HStack {
+                            Spacer()
+                            Text(buttonTitle)
+                                .foregroundColor(blackColor)
+                                .font(.inter(size: 24))
+                            Spacer()
+                        }
+                            .padding(.vertical, 28)
+                            .background(buttonBackground)
+                            .cornerRadius(40)
+                            .padding(.horizontal, 16)
+                    }
+                } else {
+                    Button {
                         scene.viewModel.chooseAll()
                         allSelected = true
+                    } label: {
+                        HStack {
+                            Spacer()
+                            Text(buttonTitle)
+                                .foregroundColor(blackColor)
+                                .font(.inter(size: 24))
+                            Spacer()
+                        }
+                            .padding(.vertical, 28)
+                            .background(buttonBackground)
+                            .cornerRadius(40)
+                            .padding(.horizontal, 16)
                     }
-                } label: {
-                    HStack {
-                        Spacer()
-                        Text(buttonTitle)
-                            .foregroundColor(blackColor)
-                            .font(.inter(size: 24))
-                        Spacer()
-                    }
-                        .padding(.vertical, 28)
-                        .background(buttonBackground)
-                        .cornerRadius(40)
                 }
-                .padding(.horizontal, 16)
+//                Button {
+//                    if scene.isOneSelected ||
+//                        scene.isTwoSelected ||
+//                        scene.isThreeSelected ||
+//                        scene.isFourSelected ||
+//                        scene.isFiveSelected ||
+//                        scene.isSixSelected ||
+//                        allSelected {
+//                        didTap()
+//                    } else {
+//                        scene.viewModel.chooseAll()
+//                        allSelected = true
+//                    }
+//                } label: {
+//
+//                }
             }
             .padding(.bottom, 16)
         }

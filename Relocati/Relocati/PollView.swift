@@ -71,10 +71,10 @@ struct PollView: View {
             .padding(.horizontal, 24)
             
             Spacer()
-            
-            Button {
-                didTap()
-            } label: {
+            NavigationLink(
+                destination: CountryMatchView(didTap: { })
+                    .navigationBarBackButtonHidden(true)
+            ) {
                 HStack {
                     Spacer()
                     Text("Далее")
@@ -86,9 +86,9 @@ struct PollView: View {
                 .background(blackColor)
                 .cornerRadius(40)
                 
+                .padding(.horizontal, 16)
+                .padding(.bottom, 29)
             }
-            .padding(.horizontal, 16)
-            .padding(.bottom, 29)
         }
     }
 }

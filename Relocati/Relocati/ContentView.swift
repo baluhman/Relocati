@@ -7,15 +7,17 @@
 
 import SwiftUI
 
+enum Route: Hashable {
+    case countryMatch(String)
+    case bounceView(String)
+}
+
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            PollView() { }
         }
-        .padding()
     }
 }
 
