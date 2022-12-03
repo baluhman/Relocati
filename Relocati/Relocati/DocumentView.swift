@@ -19,19 +19,9 @@ struct DocumentView: View {
         VStack(alignment: .leading) {
             Group {
                 VStack(alignment: .leading) {
-                    HStack {
-                        Image("backButton")
-                        
-                        Spacer()
-                            .frame(width: 10)
-                        
-                        Text("Назад")
-                            .foregroundColor(blackColor)
-                            .font(.inter(size: 14))
-                    }
                     
                     Spacer()
-                        .frame(height: 22)
+                        .frame(height: 45)
                     
                     Text("документы")
                         .foregroundColor(blackColor)
@@ -41,6 +31,7 @@ struct DocumentView: View {
                         .frame(height: 12)
                     
                     Text("Перечень документов, которые необходимы\nтебе для переезда на длительный срок")
+                        .fixedSize()
                         .foregroundColor(blackColor)
                         .font(.inter(size: 14))
                     
@@ -107,6 +98,7 @@ struct DocumentView: View {
             Spacer()
         }
         .padding(.top, 55)
+        .padding(.bottom)
         .background(backColor)
         .edgesIgnoringSafeArea(.all)
     }

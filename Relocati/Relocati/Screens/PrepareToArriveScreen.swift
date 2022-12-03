@@ -8,134 +8,119 @@
 import SwiftUI
 
 struct PrepareToArriveView: View {
+    @State var newLevelPresent = false
+    
     var body: some View {
         ZStack {
-            Color(hex: "1E1E1E")
-                .ignoresSafeArea()
-            
-            VStack(alignment: .leading) {
-                // TODO: - поменять шрифты на кастомные вместо системных
-                HStack(alignment: .center) {
-                    Image("Ellipse 10")
-                        .clipShape(Circle())
+            ZStack {
+                VStack(alignment: .leading) {
                     
-                    VStack(alignment: .leading, spacing: 3) {
-                        Text("Александр")
-                            .font(.system(size: 14))
-                            .lineSpacing(14)
-                            .foregroundColor(.white)
-                            .padding(3)
-                        Text("82 дня до переезда")
-                            .font(.system(size: 14))
-                            .foregroundColor(.white)
-                            .opacity(0.6)
-                    }
-                    .padding()
-                    
-                    Spacer()
-                    
-                    VStack(spacing: 5) {
-                        Text("buddy pro")
-                            .font(.system(size: 14))
-                            .frame(width: 82, height: 25)
-                            .background(.purple)
-                            .cornerRadius(19)
-                        
-                        Text("Подписаться")
-                            .font(.system(size: 10))
-                            .padding(0.0)
-                            .foregroundColor(.white)
-                    }
-                }
-                .padding()
-                
-                VStack(alignment: .leading, spacing: 30) {
-                    HStack(alignment: .center) {
-                        Image("Ellipse 10")
-                            .clipShape(Circle())
-                        
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text("Александр")
-                                .font(Font.inter(size: 14))
-                                .foregroundColor(.white)
-                                .padding(3)
-                            Text("82 дня до переезда")
-                                .font(Font.inter(size: 14))
-                                .foregroundColor(.white)
-                                .opacity(0.6)
-                        }
-                        Spacer()
-                        
-                        VStack(spacing: 5) {
-                            Text("buddy pro")
-                                .font(Font.grotesk(size: 14).weight(.bold))
-                                .frame(width: 82, height: 25)
-                                .background(.purple)
-                                .cornerRadius(19)
+                    VStack(alignment: .leading, spacing: 30) {
+                        HStack(alignment: .center) {
+                            Image("Ellipse 10")
+                                .clipShape(Circle())
                             
-                            Text("Подписаться")
-                                .font(Font.inter(size: 10))
-                                .foregroundColor(.white)
-                        }
-                    }
-                    
-                    VStack(alignment: .leading) {
-                        Text("cтамбул, турция")
-                            .font(Font.grotesk(size: 23).weight(.bold))
-                            .foregroundColor(.white)
-                        
-                        ProgressBar()
-                            .frame(height: 13)
-                        
-                        HStack {
-                            Text("Уровень 1")
-                                .font(Font.inter(size: 14))
-                            .foregroundColor(.white.opacity(0.6))
+                            VStack(alignment: .leading, spacing: 3) {
+                                Text("Александр")
+                                    .font(Font.inter(size: 14))
+                                    .foregroundColor(.white)
+                                    .padding(3)
+                                Text("82 дня до переезда")
+                                    .font(Font.inter(size: 14))
+                                    .foregroundColor(.white)
+                                    .opacity(0.6)
+                            }
+                            Spacer()
                             
-                            Circle()
-                                .frame(width: 4, height: 4)
-                                .foregroundColor(.pink)
-                            
-                            Text("На чемоданах")
-                                .font(Font.inter(size: 14))
-                                .foregroundColor(.white)
+                            VStack(spacing: 5) {
+                                Text("buddy pro")
+                                    .font(Font.grotesk(size: 14).weight(.bold))
+                                    .frame(width: 82, height: 25)
+                                    .background(.purple)
+                                    .cornerRadius(19)
+                                
+                                Text("Подписаться")
+                                    .font(Font.inter(size: 10))
+                                    .foregroundColor(.white)
+                            }
                         }
                         
-                    }
-                    
-                    VStack(spacing: 16) {
-                        GridItemView(
-                            color: Color(hex: "#5552FF"),
-                            headerTitle: "финансы",
-                            descriptionTitle: "Калькулятор жизни в твоем городе, цены на транспорт и жилье"
-                        )
-                        .frame(height: 160)
+                        VStack(alignment: .leading) {
+                            Text("cтамбул, турция")
+                                .font(Font.grotesk(size: 23).weight(.bold))
+                                .foregroundColor(.white)
+                            
+                            ProgressBar()
+                                .frame(height: 13)
+                            
+                            HStack {
+                                Text("Уровень 1")
+                                    .font(Font.inter(size: 14))
+                                    .foregroundColor(.white.opacity(0.6))
+                                
+                                Circle()
+                                    .frame(width: 4, height: 4)
+                                    .foregroundColor(.pink)
+                                
+                                Text("На чемоданах")
+                                    .font(Font.inter(size: 14))
+                                    .foregroundColor(.white)
+                            }
+                            
+                        }
                         
-                        HStack {
+                        VStack(spacing: 16) {
                             GridItemView(
-                                color: Color(hex: "#FF5FC8"),
-                                headerTitle: "язык",
-                                descriptionTitle: "Важные фразы для знакомства со страной"
+                                color: Color(hex: "#5552FF"),
+                                headerTitle: "финансы",
+                                descriptionTitle: "Калькулятор жизни в твоем городе, цены на транспорт и жилье"
                             )
-                            Image("Rectangle 19")
-                                .clipShape(RoundedRectangle(cornerRadius: 20))
-                        }
-                        .frame(height: 174)
-                        
-                        HStack {
-                            SubscriptionView()
-                                .fixedSize(horizontal: false, vertical: true)
-                                .frame(width: 120)
-                            GridItemView(
-                                color: Color(hex: "#5FFFF5"),
-                                headerTitle: "про город",
-                                descriptionTitle: "Инфраструктура и особенности проживания"
-                            )
+                            .frame(height: 160)
+                            .onTapGesture {
+                                newLevelPresent = true
+                            }
+                            
+                            HStack {
+                                GridItemView(
+                                    color: Color(hex: "#FF5FC8"),
+                                    headerTitle: "язык",
+                                    descriptionTitle: "Важные фразы для знакомства со страной"
+                                )
+                                NavigationLink(
+                                    destination: DocumentView() { }
+                                ) {
+                                    Image("Rectangle 19")
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                }
+                            }
+                            .frame(height: 174)
+                            
+                            HStack {
+                                SubscriptionView()
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .frame(width: 120)
+                                GridItemView(
+                                    color: Color(hex: "#5FFFF5"),
+                                    headerTitle: "про город",
+                                    descriptionTitle: "Инфраструктура и особенности проживания"
+                                )
+                            }
                         }
                     }
+                    .padding(EdgeInsets(top: 44, leading: 16, bottom: 0, trailing: 16))
                 }
-                .padding(EdgeInsets(top: 44, leading: 16, bottom: 0, trailing: 16))
             }
+            .background(
+                Color(hex: "1E1E1E"))
+            .opacity(newLevelPresent ? 0.7 : 1)
+            
+            UpLevelView() {
+                self.newLevelPresent = false
+            }
+            .offset(y: self.newLevelPresent ? 170 : UIScreen.main.bounds.height)
+            .animation(.spring())
+            .frame(width: UIScreen.main.bounds.width)
+            .edgesIgnoringSafeArea(.all)
         }
     }
 }
