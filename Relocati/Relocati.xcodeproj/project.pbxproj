@@ -13,6 +13,7 @@
 		4F9F5CD7293A40B700DF2068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F9F5CD6293A40B700DF2068 /* Preview Assets.xcassets */; };
 		4F9F5CDF293AA04900DF2068 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F5CDE293AA04900DF2068 /* ProgressBar.swift */; };
 		4F9F5CE6293AC45100DF2068 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F5CE5293AC45100DF2068 /* GridItemView.swift */; };
+		4F9F5CE9293ACAEF00DF2068 /* PrepareToArriveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F5CE8293ACAEF00DF2068 /* PrepareToArriveScreen.swift */; };
 		FD232A82293A9EA900D0B282 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A81293A9EA800D0B282 /* BounceView.swift */; };
 		FD232A86293A9EBA00D0B282 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A83293A9EBA00D0B282 /* FontFamily.swift */; };
 		FD232A87293A9EBA00D0B282 /* Color + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A84293A9EBA00D0B282 /* Color + Hex.swift */; };
@@ -34,6 +35,7 @@
 		4F9F5CD6293A40B700DF2068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4F9F5CDE293AA04900DF2068 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		4F9F5CE5293AC45100DF2068 /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
+		4F9F5CE8293ACAEF00DF2068 /* PrepareToArriveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareToArriveScreen.swift; sourceTree = "<group>"; };
 		FD232A81293A9EA800D0B282 /* BounceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		FD232A83293A9EBA00D0B282 /* FontFamily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
 		FD232A84293A9EBA00D0B282 /* Color + Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Hex.swift"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		4F9F5CCE293A40B600DF2068 /* Relocati */ = {
 			isa = PBXGroup;
 			children = (
+				4F9F5CE7293ACAC200DF2068 /* Screens */,
 				4F9F5CE0293AB54000DF2068 /* Views */,
 				FD232A9C293AC9A800D0B282 /* Bounce */,
 				FD232A8F293A9F1C00D0B282 /* Info.plist */,
@@ -117,6 +120,14 @@
 				4F9F5CE5293AC45100DF2068 /* GridItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4F9F5CE7293ACAC200DF2068 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4F9F5CE8293ACAEF00DF2068 /* PrepareToArriveScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		FD232A89293A9EBC00D0B282 /* Extensions */ = {
@@ -220,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F9F5CE9293ACAEF00DF2068 /* PrepareToArriveScreen.swift in Sources */,
 				FD232A86293A9EBA00D0B282 /* FontFamily.swift in Sources */,
 				FD232A9E293ACF6F00D0B282 /* PollView.swift in Sources */,
 				FD232A82293A9EA900D0B282 /* BounceView.swift in Sources */,
