@@ -20,6 +20,7 @@
 		FD232A93293AA12700D0B282 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD232A92293AA12700D0B282 /* Inter-Regular.ttf */; };
 		FD232A95293AA5AF00D0B282 /* View + CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A94293AA5AF00D0B282 /* View + CornerRadius.swift */; };
 		FD232A97293AA89200D0B282 /* CountryMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A96293AA89200D0B282 /* CountryMatchView.swift */; };
+		FD232A9B293AC92E00D0B282 /* BounceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A9A293AC92E00D0B282 /* BounceScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FD232A92293AA12700D0B282 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		FD232A94293AA5AF00D0B282 /* View + CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + CornerRadius.swift"; sourceTree = "<group>"; };
 		FD232A96293AA89200D0B282 /* CountryMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMatchView.swift; sourceTree = "<group>"; };
+		FD232A9A293AC92E00D0B282 /* BounceScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +72,10 @@
 		4F9F5CCE293A40B600DF2068 /* Relocati */ = {
 			isa = PBXGroup;
 			children = (
+				FD232A9C293AC9A800D0B282 /* Bounce */,
 				FD232A8F293A9F1C00D0B282 /* Info.plist */,
 				FD232A8A293A9EC500D0B282 /* Fonts */,
 				FD232A89293A9EBC00D0B282 /* Extensions */,
-				FD232A81293A9EA800D0B282 /* BounceView.swift */,
 				4F9F5CCF293A40B600DF2068 /* RelocatiApp.swift */,
 				4F9F5CD1293A40B600DF2068 /* ContentView.swift */,
 				4F9F5CD3293A40B700DF2068 /* Assets.xcassets */,
@@ -110,6 +112,15 @@
 				FD232A92293AA12700D0B282 /* Inter-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FD232A9C293AC9A800D0B282 /* Bounce */ = {
+			isa = PBXGroup;
+			children = (
+				FD232A9A293AC92E00D0B282 /* BounceScene.swift */,
+				FD232A81293A9EA800D0B282 /* BounceView.swift */,
+			);
+			path = Bounce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				FD232A88293A9EBA00D0B282 /* UIColor + Hex.swift in Sources */,
 				FD232A91293AA01D00D0B282 /* UpLevelView.swift in Sources */,
 				4F9F5CD0293A40B600DF2068 /* RelocatiApp.swift in Sources */,
+				FD232A9B293AC92E00D0B282 /* BounceScene.swift in Sources */,
 				FD232A87293A9EBA00D0B282 /* Color + Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
