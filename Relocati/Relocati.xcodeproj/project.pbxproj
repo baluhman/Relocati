@@ -25,6 +25,7 @@
 		FD232A97293AA89200D0B282 /* CountryMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A96293AA89200D0B282 /* CountryMatchView.swift */; };
 		FD232A9B293AC92E00D0B282 /* BounceScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A9A293AC92E00D0B282 /* BounceScene.swift */; };
 		FD232A9E293ACF6F00D0B282 /* PollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A9D293ACF6F00D0B282 /* PollView.swift */; };
+		FD232AA0293AD33B00D0B282 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A9F293AD33B00D0B282 /* DocumentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FD232A96293AA89200D0B282 /* CountryMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMatchView.swift; sourceTree = "<group>"; };
 		FD232A9A293AC92E00D0B282 /* BounceScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceScene.swift; sourceTree = "<group>"; };
 		FD232A9D293ACF6F00D0B282 /* PollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollView.swift; sourceTree = "<group>"; };
+		FD232A9F293AD33B00D0B282 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				FD232A90293AA01D00D0B282 /* UpLevelView.swift */,
 				FD232A96293AA89200D0B282 /* CountryMatchView.swift */,
 				FD232A9D293ACF6F00D0B282 /* PollView.swift */,
+				FD232A9F293AD33B00D0B282 /* DocumentView.swift */,
 			);
 			path = Relocati;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				4F9F5CE6293AC45100DF2068 /* GridItemView.swift in Sources */,
 				FD232A95293AA5AF00D0B282 /* View + CornerRadius.swift in Sources */,
 				FD232A88293A9EBA00D0B282 /* UIColor + Hex.swift in Sources */,
+				FD232AA0293AD33B00D0B282 /* DocumentView.swift in Sources */,
 				FD232A91293AA01D00D0B282 /* UpLevelView.swift in Sources */,
 				4F9F5CD0293A40B600DF2068 /* RelocatiApp.swift in Sources */,
 				FD232A9B293AC92E00D0B282 /* BounceScene.swift in Sources */,
