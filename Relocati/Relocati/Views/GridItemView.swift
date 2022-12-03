@@ -32,11 +32,12 @@ struct GridItemView: View {
             VStack(alignment: .leading) {
                 Text(headerTitle)
                     .font(
-                        .system(size: 38)
+                        Font.grotesk(size: 38)
                         .weight(.bold)
                     )
                 
                 Text(descriptionTitle)
+                    .font(Font.inter(size: 14))
             }
         }
     }

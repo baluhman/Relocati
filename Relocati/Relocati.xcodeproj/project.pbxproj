@@ -14,6 +14,7 @@
 		4F9F5CDF293AA04900DF2068 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F5CDE293AA04900DF2068 /* ProgressBar.swift */; };
 		4F9F5CE6293AC45100DF2068 /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F5CE5293AC45100DF2068 /* GridItemView.swift */; };
 		4F9F5CE9293ACAEF00DF2068 /* PrepareToArriveScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F5CE8293ACAEF00DF2068 /* PrepareToArriveScreen.swift */; };
+		4F9F5CEF293B2A2200DF2068 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9F5CEE293B2A2200DF2068 /* SubscriptionView.swift */; };
 		FD232A82293A9EA900D0B282 /* BounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A81293A9EA800D0B282 /* BounceView.swift */; };
 		FD232A86293A9EBA00D0B282 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A83293A9EBA00D0B282 /* FontFamily.swift */; };
 		FD232A87293A9EBA00D0B282 /* Color + Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD232A84293A9EBA00D0B282 /* Color + Hex.swift */; };
@@ -37,6 +38,7 @@
 		4F9F5CDE293AA04900DF2068 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		4F9F5CE5293AC45100DF2068 /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
 		4F9F5CE8293ACAEF00DF2068 /* PrepareToArriveScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareToArriveScreen.swift; sourceTree = "<group>"; };
+		4F9F5CEE293B2A2200DF2068 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
 		FD232A81293A9EA800D0B282 /* BounceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceView.swift; sourceTree = "<group>"; };
 		FD232A83293A9EBA00D0B282 /* FontFamily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
 		FD232A84293A9EBA00D0B282 /* Color + Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color + Hex.swift"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		4F9F5CE0293AB54000DF2068 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4F9F5CEE293B2A2200DF2068 /* SubscriptionView.swift */,
 				4F9F5CDD293AA01B00DF2068 /* ProgressBar */,
 				4F9F5CE5293AC45100DF2068 /* GridItemView.swift */,
 			);
@@ -237,6 +240,7 @@
 				4F9F5CE9293ACAEF00DF2068 /* PrepareToArriveScreen.swift in Sources */,
 				FD232A86293A9EBA00D0B282 /* FontFamily.swift in Sources */,
 				FD232A9E293ACF6F00D0B282 /* PollView.swift in Sources */,
+				4F9F5CEF293B2A2200DF2068 /* SubscriptionView.swift in Sources */,
 				FD232A82293A9EA900D0B282 /* BounceView.swift in Sources */,
 				FD232A97293AA89200D0B282 /* CountryMatchView.swift in Sources */,
 				4F9F5CD2293A40B600DF2068 /* ContentView.swift in Sources */,
