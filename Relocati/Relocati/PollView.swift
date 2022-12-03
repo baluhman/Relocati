@@ -59,8 +59,14 @@ struct PollView: View {
                     .padding(.horizontal, 19)
                     .background(.black)
                     .cornerRadius(40)
-                    
                 }
+                
+                Spacer()
+                    .frame(height: 24)
+                
+                Text("Это поможет нам понять, в каких городах\nтебе будет комфортнее всего финансово")
+                    .font(.inter(size: 14))
+                    .foregroundColor(blackColor)
             }
             .padding(.horizontal, 24)
             
